@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=League+Spartan:wght@600;700&family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    font-family: lato, sans-serif ;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #231955 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color: #E8AA42 ;
+}
+
+.left-img {
+    width: 30vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.card-login {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 25px 15px;
+    background: #382F60;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000006;
+}
+
+.card-login > h1 {
+    color: #E8AA42;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    
+}
+
+.textfield > input{
+    
+    border: none;
+    border-radius: 10px;
+    padding: 15px 15px;
+    background: #282846;
+    color: #D8EBE4;
+    font-size: 12pt;
+    box-shadow:  0px 10px 20px #000006;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #D8EBE4;
+    margin-bottom: 10px;
+
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn-login {
+    width: 100px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800px;
+    letter-spacing: 2px;
+    color: #382F60;
+    background: #FFE5B4;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px  #FFC18E;   
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width: 85%
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login {
+        width: 100%;
+        height: auto;
+
+    }
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+    .left-img {
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
+
+
